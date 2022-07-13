@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/contact.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Get in touch </title>
+
+    <div class="topnav" id="myTopnav">
+       <a href="./index.html">Home</a>
+       <a href="./food.html">Food</a>
+       <a href="./RSVP.html">RSVP</a>
+       <a href="./contact.html">Contact</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+       </a>
+     </div>
+ 
+  </head>
+
+  <body>
+       <div class="container">
+        <h1>Location</h1>
+        <div class="location">
+      <div class="map">
+        <h2>Wedding location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.5676990068296!2d-6.9318286689615904!3d53.4225571160092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485d8904caa4490d%3A0xf00c7a819b94c20!2sMoyvalley%20Hotel%20%26%20Golf%20Resort!5e0!3m2!1ses-419!2sie!4v1653336651881!5m2!1ses-419!2sie" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="locationText">
+        <h2>How to get there</h2>
+        <p>   
+          <h3>From Dublin City, Locate the N4:</h3>
+          Continue Straight onto M4(Galway, Sligo, Westport), At Junction 8 take the exit for Kilcock/Clane, At the Roundabout take the 3rd Exit onto R148,Continue Straight through Enfied, Continue Straight for 6.3km, Turn left for Moyvalley Hotel & Golf Resort.
+        </p>
+        <p>
+          <h3>From Dublin Airport, Locate M50 (Southbound):</h3>
+          At Junction 4 take the N4 Exit for Sligo/Westport/Galway, Continue Straight onto M4, At Junction 8 take the exit for Kilcock/Clane, At the Roundabout take the 3rd Exit onto R148,Continue Straight through Enfied, Continue Straight for 6.3km, Turn left for Moyvalley Hotel & Golf Resort.
+        </p>
+        <p>
+          <h3>From Galway, Locate N6:</h3>
+          Continue Straight onto M6, At junction 2 take the R148 exit for Kinnegad, Turn left onto R148, Continue Straight on R148, Turn Right for Moyvalley Hotel & Golf Resort.
+        </p>
+        </div>
+
+      </div>
+      <div class="form">
+      <form onsubmit="event.preventDefault(); validateForm(); reset(); return false">
+        <h1>Get in touch with us!</h1>
+        
+        <label for="name">Name</label>
+        <p><input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name.."
+        /></p>
+        <small class="error"></small>
+
+        <label for="phone">Phone</label>
+        <p><input
+          type="text"
+          id="phone"
+          name="phone"
+          placeholder="Your phone number.."
+        /></p>
+        <small class="error"></small>
+
+
+        <label for="message">Your Message</label>
+        <p><textarea
+          id="message"
+          name="message"
+          placeholder="What can we help you with?.." rows="4"
+        ></textarea></p>
+        <small class="error"></small>
+
+        <div class="button">
+          <input type="submit" value="Send Message">
+          <p id="success"></p>
+        </div>          
+      </form>
+    </div>
+    </div>
+   
+    <script src="./JS/contact.js"></script>
+  </body>
+</html>

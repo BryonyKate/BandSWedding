@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./CSS/RSVP.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prata&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+         <a href="./index.html">Home</a>
+         <a href="./food.html">Food</a>
+         <a href="./RSVP.html">RSVP</a>
+         <a href="./contact.html">Contact</a>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+           <i class="fa fa-bars"></i>
+         </a>
+       </div>
+
+
+</head>
+
+<body>
+    <h1>RSVP</h1>
+    <div class="instruction">
+      <p>Please let us know if you can join us in celebrating our special day.</p>
+      <p>We very much look forward to seeing you there.</p>
+    </div>
+    
+    <form onsubmit="event.preventDefault(); validateForm(); reset(); return false">
+    
+    <div class="instertName">
+        <label for="name" class="labelName">Full Name</label>
+        <p>
+          <input type="text" id="name" name="name" placeholder="Your name.."/>
+        </p>
+        <small class="error"></small>
+      </div>
+      <div class="rsvpCheck">
+        <div class="RSVP">
+          <input type="checkbox" id="RSVP1" name="RSVP1"/>
+          <label for="RSVP1">
+           We would love to come for both days, thank you!</label><br/>
+        </div>
+        <div class="rsvpCheck">
+          <input type="checkbox" id="RSVP2" name="RSVP2"/>
+          <label for="RSVP2"> We can only come for day 1, sorry!</label><br/>
+        </div>
+        <div class="rsvpCheck">
+          <input type="checkbox" id="RSVP3" name="RSVP3"/>
+          <label for="RSVP3"> Sadly we cannot make it. </label><br/>
+        </div>
+
+      <div class="specialReqDiv">
+        <label for="specialReq" class="specialReq">Please let us know if you are bringing your little ones or have any special requirements.</label>
+        <p>
+          <input
+            type="text"
+            id="specialReq"
+            name="specialReq"
+            placeholder="Let us know here..."
+          />
+        </p>
+      </div>
+
+      <div class="button">
+        <input type="submit" value="Send Message" />
+        <p id="success"></p>
+      </div>
+</form>
+    <script src="./JS/RSVP.js"></script>
+</body>

@@ -1,0 +1,200 @@
+/* Add a background color to the top navigation */
+.topnav {
+  background-color: rgb(113, 142, 86);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float:none;
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:rgb(113, 142, 86);
+  color: darksalmon;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  background-color: rgb(220, 229, 210);
+  background-image: url(./background6.png);
+  background-repeat: repeat-y;
+  background-size: 95%;
+  color: rgb(72, 93, 52);
+  text-align: center;
+  height: 100%;
+  font-family: "Prata", serif;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+}
+.instruction p {
+  margin: 5px;
+}
+
+.instruction {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.instertName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.menuCheck {
+  /* display: flex; */
+  align-items: center;
+  align-self: center;
+  flex-direction: column;
+  /* max-width: 700px; */
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.rsvpCheck p {
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+  width: 400px;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  resize: vertical; /* Allow the user to vertically resize the textarea */
+  font-family: "Prata", serif;
+  outline: none;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 2px solid rgb(113, 142, 86);
+}
+
+::placeholder {
+  font-family: "Prata", serif;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.labelName {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: rgb(249, 254, 243);
+  height: 12px;
+  width: 12px;
+  border-radius: 2px;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px gray;
+  margin: 8px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: rgb(197, 139, 104);
+}
+
+.specialReq {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.specialReqDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.button {
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 50%;
+  height: 35px;
+  max-width: 200px;
+  background: rgb(72, 93, 52);
+  color:  darksalmon;
+  font-size: 16px;
+  font-family: "Prata", serif;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(113, 142, 86);
+}
+
+p {
+  margin: 0;
+  display: block;
+}
+
+.error {
+  color:  darksalmon;
+  font-size: 80%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#success {
+  color: green;
+}

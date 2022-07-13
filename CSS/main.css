@@ -1,0 +1,268 @@
+/* Add a background color to the top navigation */
+.topnav {
+  background-color: rgb(113, 142, 86);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float:none;
+  display: inline-block;
+  color:white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color:rgb(113, 142, 86);
+  color:  darksalmon;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+body {
+  background-color: rgb(220, 229, 210);
+  text-align: center;
+  /* align-items: center; */
+  color: rgb(72, 93, 52);
+  height: 100%;
+  font-family: "Prata";
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 45px;
+}
+
+h2 {
+  font-weight: bold;
+  position: flex;
+  float: flex;
+  font-size: 28px;
+}
+
+h3 {
+  margin: auto;
+  font-size: 25px;
+}
+
+.wedding {
+  align-self: center;
+  position: flex;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.schedule {
+  margin-right: 170px;
+  padding: 47px;
+  float: right;
+  font-weight: bold;
+  font-size: 20px;
+  flex-wrap: wrap;
+  background-color: rgb(72, 93, 52);
+  color: rgb(220, 229, 210);
+  margin-top: 80px;
+  border-radius: 10px;
+  width: 600px;
+  max-width: 1000px;
+  padding-bottom: 92px;
+  height: 555px;
+  max-height: 700px;
+}
+
+ul {
+  list-style: none;
+  font-size: 16px;
+  display: inline;
+  color: darksalmon;
+  /* padding-bottom: 50px; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: right;
+  width: 700px; */
+  /* padding-right: 80px;
+  margin-right: 80px; */
+}
+
+.title {
+  font-size: 25px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  color: darksalmon;
+}
+
+/* .date {
+  font-size: 28px;
+  list-style: none;
+  align-content: center;
+  align-items: center;
+  font-family: "prata";
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 700px;
+  position: relative;  
+} */
+
+/* .wedding {
+  list-style: none;
+  font-family: "prata";
+} */
+
+#demo {
+  font-size: 20px;
+  /* background-color: rgb(197, 139, 104); */
+  /* position: center; */
+  /* right: 160px; */
+  /* width: 230px;
+  height: 30px; */
+  /* float: flex; */
+  /* align-content: center;
+  align-self: center; */
+  /* position: flex;
+  float: flex; */
+  /* align-self: center; */
+  background-color: rgb(72, 93, 52);
+  color: darksalmon;
+  width: 250px;
+  height: 50px;
+  padding-top: 12px;
+  border-radius: 50%;
+  margin-left: 585px;
+  /* margin-top: 390px;
+  margin-right: 140px; */
+  /* margin-right: 0px; */
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: left;
+  float: left;
+  margin: auto;
+  padding-left: 170px;
+  padding-bottom: 150px;
+  margin-top: 80px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(72, 93, 52);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 6px 6px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 20px;
+  position: relative;
+  float: right;
+  margin-top: 2px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 20px;
+  position: relative;
+  float: left;
+  margin-top: 2px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: darksalmon;
+}
+
+/* Caption text */
+/* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 20px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: darksalmon;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
